@@ -14,7 +14,8 @@ public with sharing class Opp2 {
       WHERE Id != :oppId AND Email__c != NULL AND Email__c = :email
       WITH USER_MODE
     ];
-    /*if(!allList.isEmpty()){
+    /*
+        if(!allList.isEmpty()){
             if(ol[0].Duplicate__c == false){
                 ol[0].Duplicate__c = true;
                 isUpdate = true;
@@ -26,7 +27,8 @@ public with sharing class Opp2 {
             }
         }
         if(isUpdate)
-            Database.update(ol);*/
+            Database.update(ol);
+    */
     OppDataWrapper odwObj = new OppDataWrapper();
     List<Opportunity> oppListToUpdate = new List<Opportunity>();
     odwObj.isUpdate = false;
